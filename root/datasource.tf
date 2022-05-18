@@ -8,18 +8,9 @@ data "aws_availability_zones" "azs" {
 
 #data.aws_ami_ids.amazon_linux_2
 
-/*data "aws_ami" "ami" {
-    most_recent      = true
-    owners =  ["self"]
+data "aws_ami" "ami" {
+  most_recent = true
+  owners      = ["amazon"]
 
-     filter {
-    name   = "state"
-    values = ["available"]
-  }
-
-  filter {
-    name   = "tag:components"
-    values = ["ami"]
-  }
-
-}*/
+}
+  

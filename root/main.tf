@@ -24,7 +24,7 @@ resource "aws_subnet" "private_subnet" {
   }
 }
 resource "aws_instance" "web" {
-  ami           = var.ami
+  ami           = data.aws_ami.ami.id
   instance_type = var.instance_type
   subnet_id     = aws_subnet.public_subnet.id
 

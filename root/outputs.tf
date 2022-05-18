@@ -11,5 +11,5 @@ output "public_ip" {
 
 output "ami" {
   description = "ami id"
-  value = aws_instance.web.ami
+  value       = aws_instance.web.ami
 }
