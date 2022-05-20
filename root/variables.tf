@@ -37,3 +37,16 @@ variable "private_subnet_cidr" {
   default     = "10.0.2.0/24"
 
 }
+
+/*variable "create_instance" {
+  type    = bool
+  default = true
+
+}
+
+#for each using list of string
+variable "instance_types" {
+  type    = list(any)
+  default = ["t3.micro", "t2.micro"]
+
+}*/
